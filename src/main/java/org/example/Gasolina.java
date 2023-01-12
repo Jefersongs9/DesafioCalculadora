@@ -1,27 +1,32 @@
 package org.example;
 
-public class Imposto {
-    public static void impostoRenda () {
+import java.util.Scanner;
+public class Gasolina {
+    public static void gasolina () {
 
-        System.out.println("Digite seu salário bruto mensal: ");
+        Scanner sc = new Scanner(System.in);
 
-        Scanner digiteosalario = new Scanner(System.in);
+        System.out.println("obs: Digite apenas numeros!");
+        System.out.println("Quantos litros de gasolina o seu carro gasta por quilometro?");
 
-        double salario = digiteosalario.nextInt();
+        double kmPorLitro = sc.nextDouble();
+
+        System.out.println("Quantos quilometros voce pretende percorrer?");
+
+        double km = sc.nextDouble();
+
+        System.out.println("Qual o valor atual da gasolina?");
+
+        double valorDaGasolina = sc.nextDouble();
+
+        double litroASeremUsados = km / kmPorLitro;
+
+        double valorASerPago = valorDaGasolina * litroASeremUsados;
+
+        System.out.printf("Voce precisara de %.1f litros de gasolina para percorrer %.1f quilometros e ira gastar um valor de R$ %.2f ", litroASeremUsados, km, valorASerPago);
 
 
-        if ( salario < 1903.98) {
-            System.out.println("Você está isento de imposto de renda");
-        }
-        else if (salario >=1903.98 && salario <2826.65){
-
-            double imposto = salario * 0.075;
-
-            double salariodeduzido = salario - imposto;
-
-            System.out.printf("Você pagará de imposto %.2f e receberá o salário líquido de %.2f", imposto, salariodeduzido);
-
-        }
+        sc.close();
 
     }
 }

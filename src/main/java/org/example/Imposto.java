@@ -47,7 +47,7 @@ public class Imposto {
 
         else if (salario >= 4664.69){
 
-            double imposto = salario * 0.275;
+            double imposto = salario * 0.227;
 
             double salariodeduzido = salario - imposto;
 
