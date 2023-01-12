@@ -1,4 +1,4 @@
-package org.example;
+package org.example.imposto;
 
 import java.util.Scanner;
 

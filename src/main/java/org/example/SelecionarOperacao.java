@@ -1,6 +1,8 @@
 package org.example;
 
-import java.sql.SQLOutput;
+import org.example.galosina.Gasolina;
+import org.example.imposto.Imposto;
+
 import java.util.Scanner;
 
 public class SelecionarOperacao {

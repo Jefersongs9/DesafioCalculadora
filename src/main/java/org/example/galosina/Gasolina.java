@@ -1,4 +1,4 @@
-package org.example;
+package org.example.galosina;
 
 import java.util.Scanner;
 public class Gasolina {
