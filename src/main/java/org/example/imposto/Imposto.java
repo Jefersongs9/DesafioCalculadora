@@ -2,8 +2,6 @@ package org.example.imposto;
 
 import java.util.Scanner;
 
-import java.util.Locale;
-
 public class Imposto {
     public static void impostoRenda () {
 

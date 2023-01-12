@@ -7,7 +7,7 @@ public class Gasolina {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("obs: Digite apenas numeros!");
-        System.out.println("Quantos litros de gasolina o seu carro gasta por quilometro?");
+        System.out.println("Quantos quilometros seu carro percorre com 1 litro de gasolina?");
 
         double kmPorLitro = sc.nextDouble();
 

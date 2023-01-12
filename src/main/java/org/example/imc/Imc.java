@@ -27,17 +27,17 @@ public class Imc {
         if (IMC<18.5)
             System.out.println (", e se enquadra na faixa de obesidade - MAGREZA");
         else
-        if ((IMC>18.5)&&(IMC<24.9))
+        if ((IMC>=18.5)&&(IMC<=24.9))
             System.out.println ("e se enquadra na faixa de obesidade - NORMAL");
         else
-        if ((IMC>25.0)&&(IMC<29.9))
+        if ((IMC>=25.0)&&(IMC<=29.9))
             System.out.println("e se enquadra na faixa de obesidade - SOBREPESO");
         else
-        if ((IMC>30.0)&&(IMC<34.9))
-            System.out.println("e se enquadra na faixa de obesidade - OBESIDADE");
+        if ((IMC>=30.0)&&(IMC<=34.9))
+            System.out.println("e se enquadra na faixa de obesidade - OBESIDADE I");
         else
-        if ((IMC>35.0)&&(IMC <39.9))
-            System.out.println ("");
+        if ((IMC>=35.0)&&(IMC <=39.9))
+            System.out.println (" e se enquadra na faixa de - OBESIDADE II");
         else
         if (IMC>=40)
             System.out.println ("e se enquadra na faixa de obesidade - OBESIDADE GRAVE");

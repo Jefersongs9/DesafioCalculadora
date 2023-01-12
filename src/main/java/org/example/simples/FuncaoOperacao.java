@@ -1,12 +1,40 @@
 package org.example.simples;
 
+import org.example.SelecionarOperacao;
+import org.example.galosina.Gasolina;
+import org.example.imc.Imc;
+import org.example.imposto.Imposto;
+
 import java.util.Scanner;
 
 public class FuncaoOperacao {
 
-        Scanner ScannerCapturaEntradaDoUsuario = new Scanner(System.in);
+    public static void simples () {
+
+        System.out.println( "Escolha uma das seguintes operações: dividir, multiplicar, somar ou subtrair.");
+
+        Scanner escolhendooperacao = new Scanner(System.in);
+
+        String operacaoescolhida = escolhendooperacao.next();
+
+        switch (operacaoescolhida){
+            case "dividir": dividir();
+            break;
+            case "multiplicar": multiplicar();
+            break;
+            case "somar": somar();
+            break;
+            case "subtrair": subtrair();
+            break;
+
+            default:
+                System.out.println("Ops! algo deu errado. Escolha uma dentre as seguintes operações: dividir, multiplicar, somar, subtrair");
+        }
+
+    };
 
         public static void dividir() {
+
 
             Scanner ScannerCapturaEntradaDoUsuario = new Scanner(System.in);
 

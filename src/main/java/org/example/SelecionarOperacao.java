@@ -1,7 +1,9 @@
 package org.example;
 
 import org.example.galosina.Gasolina;
+import org.example.imc.Imc;
 import org.example.imposto.Imposto;
+import org.example.simples.FuncaoOperacao;
 
 import java.util.Scanner;
 
@@ -24,6 +26,9 @@ public class SelecionarOperacao {
             break;
             case 2: Gasolina.gasolina();
             break;
+            case 3: Imc.IMC();
+            break;
+            case 4: FuncaoOperacao.simples();
         }
 
     }
