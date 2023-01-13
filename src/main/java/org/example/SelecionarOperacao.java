@@ -29,6 +29,9 @@ public class SelecionarOperacao {
             case 3: Imc.IMC();
             break;
             case 4: FuncaoOperacao.simples();
+
+            default:
+                System.out.println(" Ops! escolha apenas entre 1, 2, 3 ou 4.");
         }
 
     }

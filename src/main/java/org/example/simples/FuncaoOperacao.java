@@ -66,7 +66,10 @@ public class FuncaoOperacao {
 
         public static void somar() {
 
+
             Scanner ScannerCapturaEntradaDoUsuario = new Scanner(System.in);
+
+            System.out.println("Quantos números você deseja somar");
 
             System.out.println("Informe o primeiro numero");
             long num1 = ScannerCapturaEntradaDoUsuario.nextInt();
